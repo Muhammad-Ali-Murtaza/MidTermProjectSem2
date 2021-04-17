@@ -211,13 +211,14 @@ public class editTeacher extends javax.swing.JFrame {
         name = jTextField2.getText();
         email = jTextField1.getText();
         list = l.getTeacherList();
-//        JOptionPane.showMessageDialog(null, "Size of list"+list.size());
+//        JOptionPane.showMessageDialog(null, "Size of list"+list.size() 
+//                + "\n And Name is : "+list.get(0).getName());
         int index = 0;
         if (flag1 && flag2) {
 //            JOptionPane.showMessageDialog(null,"Input is valid");
             for (int i = 0; i < list.size(); i++) {
                 if (list.get(i).getName().equals(name)
-                        || list.get(i).getEmail().equals(email)) {
+                        && list.get(i).getEmail().equals(email)) {
 //                    JOptionPane.showMessageDialog(null, "Record Found");
                     flag1 = false;
                     index = i;

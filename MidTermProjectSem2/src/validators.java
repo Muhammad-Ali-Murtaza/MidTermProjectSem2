@@ -9,6 +9,31 @@
  * @author Muhammad Ali Murtaza
  */
 public class validators {
+    
+    public boolean courseCode(String code)
+    {
+        int size = code.length();
+        if (size == 6 || size == 7 ) {
+            if (!(code.charAt(0) == 'C' && code.charAt(1) == 'S' && code.charAt(2) == '-')) {
+                return false;
+            }
+            for (int i = 3; i < 6; i++) {
+                if (!( code.charAt(i) >= '0' && code.charAt(i) <= '9')) {
+                    return false;
+                }
+            }
+            if (size == 7) {
+                if (!(code.charAt(6) == 'L')) {
+                    return false;
+                }
+            }
+            
+        }
+        else{
+            return false;
+        }
+        return true;
+    }
 
     public boolean Name(String name) {
         for (int i = 0; i < name.length(); i++) {

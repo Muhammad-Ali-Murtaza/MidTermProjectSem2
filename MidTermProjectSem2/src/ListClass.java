@@ -1,5 +1,6 @@
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -16,6 +17,7 @@ public class ListClass {
     private  ArrayList<Person> t = new ArrayList<Person>();
     private ArrayList<Person> std = new ArrayList<Person>();
     private ArrayList<Course> c = new ArrayList<Course>();
+    Person p = new Person();
     static ListClass a = null;
     private ListClass() {
         
@@ -72,4 +74,29 @@ public class ListClass {
     {
         c.set(index, obj);
     }
+       
+    public String getName(int index){
+        return ((Person)t.get(index)).getName();
+    }
+//    public void setName(String name){
+//        this.name = name;
+//    }
+    public String getFName(int index){
+        return t.get(index).getFName();
+    }
+//    public void setFName(String fname){
+//        this.fname = fname;
+//    }
+    public String getEmail(int index){
+        return t.get(index).getEmail();
+    }
+//    public void setEmail(String email){
+//        this.email = email;
+//    }
+    public String getNumber(int index){
+        return t.get(index).getNumber();
+    }
+//    public void setNumber(String num){
+//        this.number = num;
+//    }
 }

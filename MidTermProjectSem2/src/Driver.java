@@ -18,8 +18,8 @@ public class Driver {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        System.out.println("Hello World");
-        fram1 f=new fram1();
+        
+         fram1 f=new fram1();
         f.setVisible(true);
 //Scanner input = new Scanner(System.in);
 //        validators v = new validators();

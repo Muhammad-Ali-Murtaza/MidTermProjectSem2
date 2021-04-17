@@ -30,11 +30,10 @@ public class addTeacher extends javax.swing.JFrame {
 //        add = 1;
 //
 //    }
-
     public addTeacher(editTeacher e, String name, String email, int index) {
         initComponents();
         start();
-        edit =1;
+        edit = 1;
         num = index;
         Person obj = (Person) c1.getTeacherList().get(index);
         jTextField3.setText(obj.getName());
@@ -365,9 +364,9 @@ public class addTeacher extends javax.swing.JFrame {
             if (flag1 && flag2 && flag3 && flag4) {
                 c1.addTeacher(p);
                 JOptionPane.showMessageDialog(null, "Data is saved Successfully", "Varification Message", 2);
-                fram2 f = new fram2();
-                f.setVisible(true);
+//                fram2 f = new fram2();
                 this.setVisible(false);
+//                f.setVisible(true);
             } else {
                 JOptionPane.showMessageDialog(null, "Fill Complete Varified Data!!!", "Varification Message", 2);
                 start();
@@ -383,8 +382,8 @@ public class addTeacher extends javax.swing.JFrame {
             if (flag1 && flag2 && flag3 && flag4) {
                 c1.setTeacher(num, p);
                 JOptionPane.showMessageDialog(null, "Data is Updated Successfully", "Varification Message", 2);
-                fram2 f = new fram2();
-                f.setVisible(true);
+//                fram2 f = new fram2();
+//                f.setVisible(true);
                 this.setVisible(false);
             } else {
                 JOptionPane.showMessageDialog(null, "Fill Complete Varified Data!!!", "Varification Message", 2);
