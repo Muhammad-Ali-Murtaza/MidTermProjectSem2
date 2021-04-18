@@ -211,7 +211,7 @@ public class editTeacher extends javax.swing.JFrame {
         name = jTextField2.getText();
         email = jTextField1.getText();
         list = l.getTeacherList();
-//        JOptionPane.showMessageDialog(null, "Size of list"+list.size() 
+        JOptionPane.showMessageDialog(null, "Size of list"+list.size()) ;
 //                + "\n And Name is : "+list.get(0).getName());
         int index = 0;
         if (flag1 && flag2) {

@@ -1,0 +1,4 @@
+Samyan,Father,samyan@gmail.com,03214472554,Professor
+Ali,Zahid,ali@gmail.com,03124922033,Professor
+Khadija,Asif,Dj@gmail.com,03124033044,Professor
+Hafsa,Rashid,hafsa@gmail.com,03124922033,Professor

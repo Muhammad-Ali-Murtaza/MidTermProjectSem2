@@ -221,6 +221,8 @@ public class deleteTeacher extends javax.swing.JFrame {
             }
             if (flag1 == false) {
                 list.remove(index);
+                Teacher t = new Teacher();
+                t.saveTeacher();
                 JOptionPane.showMessageDialog(null,"Data deleted Successfully","Confirmation Message", 2);
                 this.setVisible(false);
             } else {

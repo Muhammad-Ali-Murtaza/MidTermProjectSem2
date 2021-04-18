@@ -18,8 +18,9 @@ public class fram2 extends javax.swing.JFrame {
      */
     public fram2() {
         initComponents();
+        T.loadTeacher();
     }
-
+Teacher T = new Teacher();
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
