@@ -51,7 +51,7 @@ public class Teacher extends Person {
 
         ArrayList list = l.getTeacherList();
         int size = list.size();
-        JOptionPane.showMessageDialog(null, "Size of list "+size);
+//        JOptionPane.showMessageDialog(null, "Size of list "+size);
         try {
             File f = new File("Teacher.txt");
             FileWriter w = new FileWriter(f);
